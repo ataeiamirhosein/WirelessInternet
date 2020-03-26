@@ -8,5 +8,5 @@ the module used to this program are:
 - matplotlib
 #
 
-*you can find python [here](https://www.python.org)  
-*you can find wireshark [here](https://www.wireshark.org)
+* you can find python [here](https://www.python.org)  
+* you can find wireshark [here](https://www.wireshark.org)
