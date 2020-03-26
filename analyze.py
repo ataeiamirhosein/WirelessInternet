@@ -15,7 +15,7 @@ UNIQUE_VENDOR = numpy.append(UNIQUE_VENDOR,"UNKOWN")
 VENDOR_HIST = [0]*len(UNIQUE_VENDOR)
 
 #load file
-cap = pyshark.FileCapture('office_capture.pcapng')
+cap = pyshark.FileCapture('OfficeCapture.pcapng')
 
 #define lists
 ssid_list = [] #this one will store the SSID searched in each probe request
