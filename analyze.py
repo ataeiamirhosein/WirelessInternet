@@ -2,7 +2,7 @@ import pyshark, numpy
 import matplotlib.pyplot as plt, itertools
 
 #load OUT list: this is useful for understanging the vendor. the first 3 bytes of each MAC address are assigned to the manufacturer.
-f = open('D:/amir-polimi-class/WIFI/analyze_probe_requests/oui.txt','r')
+f = open('oui.txt','r')
 vendor_mac = []
 vendor_name = []
 for line in f:
@@ -15,7 +15,7 @@ UNIQUE_VENDOR = numpy.append(UNIQUE_VENDOR,"UNKOWN")
 VENDOR_HIST = [0]*len(UNIQUE_VENDOR)
 
 #load file
-cap = pyshark.FileCapture('D:/amir-polimi-class/WIFI/office_capture/home_capture.pcapng')
+cap = pyshark.FileCapture('office_capture.pcapng')
 
 #define lists
 ssid_list = [] #this one will store the SSID searched in each probe request
